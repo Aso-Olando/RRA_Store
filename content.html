@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>any</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/w3.css">
+</head>
+<body style="background-color: #121212;">
+
+  <div style=" width: 100%; position: fixed;  z-index: 1;">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark" >
+        <div class="container-fluid" style="width: 10%;" >
+          <a class="navbar-brand" href="index.html">RRA</a>
+        </div>
+            <div class="navbar-nav justify-content-start" style="width: 80%;">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link" href="products.html">Games</a>
+              <a class="nav-link" href="content.html">Pricing</a>
+            </div>
+         
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success mx-2" type="submit">Search</button>
+              </form>
+      </nav>
+</div>
+
+	<br>
+	<br><br>
+	<br>
+	<div class="slideshow-container">
+
+<div class="mySlides fade">
+  
+  <video style="width: 100% " height="100%" controls autoplay>
+    <source src="C:\Users\Rayan\Desktop\RRA Store\RRA Store\hitman\vid.mp4" type="video/mp4">
+  </video>
+ 
+</div>
+
+<div class="mySlides fade">
+
+  <img src="C:\Users\Rayan\Desktop\RRA Store\RRA Store\hitman\6.jpg"  height="100%" style="width:100%">
+
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="C:\Users\Rayan\Desktop\RRA Store\RRA Store\hitman\3.jpg" height="100%" style="width:100%">
+  
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+ 
+<div style="width: 100%; margin-left: 100px;">
+<table>
+
+  <tr class="game_info">
+    <td style="height: 168px; width: 300px;"><img style="position: box; margin: 50px 50px 50px 50px;" src="images/hitman_title.png" alt="hitman title"></td>
+    <td style="padding-left: 120px; width: 700px; height: 168x;">Death Awaits. Agent 47 returns in HITMAN 3, the dramatic conclusion to the World of Assassination trilogy. </td>
+  </tr>
+</table>
+</div>
+
+<div style="width: 100%; margin-left: 100px; margin-right: 100%;">
+  <table class="about_inf" style="width: 100%; text-align: left;">
+    <tr><td rowspan="4" style="text-align: left;"> About Hitman</td><td>Developer</td><td>Publisher</td><td> Release Date</td></tr>
+    <tr><td>IO Interactive A/S</td><td>IO Interactive A/S</td><td>Jan 20, 2021</td></tr>
+    <tr><td>Tags</td><td>Rating</td><td>Platform</td></tr>
+    <tr><td>Action,Single Player,Stealth</td><td>_</td><td>ico</td></tr>
+  </table>
+</div>
+
+
+
+<!-- <table  >
+  <tr>
+    <th >Developer</th>
+    <th >Publisher</th>
+    <th >Tags</th>
+    <th >Rating</th>
+    <th >Release Date</th>
+    <th >
+    Platform
+    </th>
+  </tr>
+  <tr>
+    <td>IO Interactive A/S</td>
+    <td>IO Interactive A/S</td>
+    <td>Action,Single Player,Streath</td>
+    <td>---</td>
+    <td>Jan 20,2021</td>
+    <td>
+    	<img src="hitman\im.png" style="width: 50px; height: 40px;">
+    </td>
+  </tr>
+
+</table> -->
+<br><br><br>
+<h4 style="color: #E5E5E5; font-size:25px;">HITMAN 3 - Deluxe Edition</h4><br>
+<p style="color: #878787;font-size:18px;">
+	HITMAN 3's first content update is here! We're adding new and free content to the game every week in Feburary for all HITMAN 3 players - plus owners of the Deluxe Edition will get access to two new Deluxe Escalations that will unlock unique suits and items.
+</p>
+<p style="color: #878787;font-size:18px;">
+	Look out for Featured Contracts coming from MinnMax and KindaFunny, new Escalations that will challenge your approach and an Elusive Target contract in Sapienza that includes two targets!
+</p>
+
+<p  style="color: #878787;font-size:18px;">
+	As well as all of this new content, we're planning a patch in a few weeks that will bring fixes and tweaks to the game. We'll give you a full rundown of what's included and what's changing closer to that time. That patch will also make sure you're prepared you for what's still to come... The Initiation Protocol has started.
+</p>
+<p style="color: #878787;font-size:18px;">
+	Death Awaits. Agent 47 returns in HITMAN 3, the dramatic conclusion to the World of Assassination trilogy
+</p>
+<br><p style="color: #E5E5E5; font-size:25px;">
+	<b>The Deluxe Edition includes exciting new content via the Deluxe Pack</b>
+</p>
+<br>
+<ul style="color: #878787;">
+	<li>
+	Deluxe Escalation Contracts
+</li><li>
+Deluxe Suits and Items
+</li>
+
+<li>Digital Soundtrack</li>
+<li>Digital “World of HITMAN” Book</li>
+<li>Director Commentary (Mission Introduction)</li>
+</ul>
+<br><br><hr>
+<br><br><br><br><br><br><br>
+
+<div style="position: relative; float: left; width: 20%;">
+<h2 align="center" >Specifications</h2>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+</div>
+<div style="position: relative; float: right;width: 80%;">
+<table align="center">
+	<tr><th>WINDOWS</th></tr>
+</table>
+<table align="center">
+	<tr>
+		<th  style="color: #878787;">Minimum</th>
+		<th style="color: #878787;">Recommended</th>
+
+	</tr>
+<tr><td style="color: #878787;">
+	Windows OS
+</td>
+<td style="color: #878787;">
+	Windows OS
+</td></tr>
+
+<tr>
+	<td >
+OS 64-bit Windows 10
+</td>
+<td >
+OS 64-bit Windows 10
+</td>
+</tr>
+<tr>
+	<td style="color: #878787;">
+	Windows Processor
+</td >
+<td style="color: #878787;">
+	Windows Processor
+</td>
+</tr>
+<tr>
+	<td >
+	Intel CPU Core i5-2500K 3.3GHz / AMD CPU Phenom II X4 940
+</td>
+<td >
+Intel CPU Core i7 4790 4 GHz
+</td>
+</tr>
+<tr>
+	<td style="color: #878787;">
+	Windows Memory
+</td>
+<td  style="color: #878787;">
+	Windows Memory
+</td>
+</tr>
+<tr>
+	<td>
+	8
+</td>
+<td>
+	16
+</td>
+</tr>
+<tr>
+	<td style="color: #878787;">
+	Windows Storage
+</td>
+<td style="color: #878787;">
+	Windows Storage
+</td>
+</tr>
+<tr>
+	<td>
+	80
+</td>
+<td>
+	80
+</td>
+</tr>
+<tr>
+	<td style="color: #878787;">
+	Windows Direct X
+</td>
+<td style="color: #878787;">
+	Windows Direct X
+</td>
+</tr>
+<tr>
+	<td>
+	12
+</td>
+<td>
+	12
+</td>
+</tr>
+<tr>
+	<td style="color: #878787;">
+	Windows Graphics
+</td>
+<td style="color: #878787;">
+	Windows Graphics
+</td>
+</tr>
+<tr>
+	<td >
+	NVIDIA GeForce GTX 660 / Radeon HD 7870
+</td>
+<td >
+	Nvidia GPU GeForce GTX 1070 / AMD GPU Radeon RX Vega 56 8GB
+</td>
+</tr>
+<tr>
+	<td style="color: #878787;">Logins</td>
+	<td></td>
+</tr>
+<tr><td>Requires Epic Games account</td>
+<td></td></tr>
+<tr><td style="color: #878787;">Languages Supported</td><td></td></tr>
+<tr><td>Audio: EnglishText: English, French, Italian, German, Spanish - Spain</td></tr>
+
+</table>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+<hr>
+<p style="font-size:15px;">HITMAN 3 © 2020 IO Interactive A/S. IO Interactive, IOI logos, HITMAN, HITMAN logos, and WORLD OF ASSASSINATION are trademarks or registered trademarks owned by or exclusively licensed to IO Interactive A/S. All other trademarks are the property of their respective owners. All rights reserved.</p>
+
+<div class="footerD">
+  <footer class="footerD">
+    
+    <div style="width: 100%; position: relative;padding-top: 30px;">
+      <div class="social-menu">
+        <ul>
+          <li><a href=""><i class="fa fa-facebook"></i></a></li>
+          <li><a href=""><i class="fa fa-twitter"></i></a></li>
+          <li><a href=""><i class="fa fa-instagram"></i></a></li>
+          <li><a href=""><i class="fa fa-youtube"></i></a></li>
+          <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+        </ul>
+      </div>
+
+      <div style="width: 100%; height: 30px; padding-top: 50px;">
+        <marquee behavior="scroll" direction="right"><p class="inf">&copy; All rights reserved to Aso Productions</p></marquee>
+        </div>
+    </div>
+  </footer>
+</div>
+
+</body>
+</html>

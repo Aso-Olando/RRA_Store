@@ -13,6 +13,9 @@ body{
     font: 16px Brutal, sans-serif ;
     font-weight: bold;
 }
+.imgt img{
+    border-radius: 10px;
+}
 
 .game_description{
     margin-left: 420px;
@@ -21,7 +24,7 @@ body{
     margin-top: 20px;
 }
 .game_description p{
-    color: var(--Nice);
+    /* color: var(--Nice); */
     font: 16px Brutal, sans-serif ;
 }
 .prod_imges{
@@ -78,6 +81,14 @@ text{
     padding-bottom: 10px;
 }
 
+#abc td{
+    padding-left: 25px;
+    padding-top: 15px;
+}
+.spnanakan{
+    color: whitesmoke;
+    font: 20px Brutal, sans-serif ;
+}
 
 .product_conatiner .prod_img img{
     border-radius: 10px;
